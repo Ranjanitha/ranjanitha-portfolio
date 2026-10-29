@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ranjanitha's personal portfolio showcasing skills, projects, and learning journey.">
+  <title>Ranjanitha | Personal Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8fc;
+      color: #202943;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo { font-size: 1.3rem; font-weight: bold; }
+
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: #93c5fd; }
+
+    .hero {
+      background: linear-gradient(135deg, #172554, #334e91);
+      color: white;
+      text-align: center;
+      padding: 95px 20px 85px;
+    }
+
+    .hero .tag {
+      color: #bfdbfe;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 28px;
+      color: #e0e7ff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      background: #ffffff;
+      color: #172554;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover { background: #dbeafe; }
+
+    main { max-width: 1000px; margin: auto; padding: 20px; }
+
+    section {
+      background: white;
+      padding: 35px;
+      margin: 28px 0;
+      border-radius: 16px;
+      border: 1px solid #e5e9f3;
+      box-shadow: 0 6px 24px rgba(23, 37, 84, 0.05);
+    }
+
+    h2 { color: #1e3a8a; margin-bottom: 15px; }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: #f1f5ff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #4263b5;
+    }
+
+    .item h3 { margin-bottom: 8px; color: #243b78; }
+
+    .item p { font-size: 0.95rem; }
+
+    .note {
+      color: #59657a;
+      font-size: 0.9rem;
+      margin-top: 15px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .contact-links a {
+      color: #1d4ed8;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      background: #172554;
+      color: #e0e7ff;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      section { padding: 24px 20px; }
+      .hero { padding: 70px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ranjanitha.</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p class="tag">Welcome to my portfolio</p>
+    <h1>Hello, I'm Ranjanitha!</h1>
+    <p>
+      An engineering student exploring technology, developing
+      problem-solving skills, and turning ideas into practical projects.
+    </p>
+    <a class="btn" href="#projects">Explore My Work</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an engineering student passionate about learning,
+        technology, and continuous improvement. I enjoy discovering
+        new concepts, strengthening my technical knowledge, and
+        developing practical skills through hands-on projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Learning</h2>
+      <div class="skills">
+        <div class="item">
+          <h3>HTML</h3>
+          <p>Learning to structure accessible web pages.</p>
+        </div>
+        <div class="item">
+          <h3>CSS</h3>
+          <p>Exploring layouts, colors, and responsive design.</p>
+        </div>
+        <div class="item">
+          <h3>Git & GitHub</h3>
+          <p>Learning version control and project publishing.</p>
+        </div>
+        <div class="item">
+          <h3>Problem-Solving</h3>
+          <p>Building logical thinking through regular practice.</p>
+        </div>
+      </div>
+      <p class="note">
+        These are learning areas. Update them as your skills develop.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="item">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website introducing me, my interests,
+          and my learning journey.</p>
+          <p><strong>Tools:</strong> HTML, CSS, GitHub Pages</p>
+        </div>
+        <div class="item">
+          <h3>Future Project</h3>
+          <p>A space for a future programming project.
+          I will add details when it is completed.</p>
+          <p><strong>Focus:</strong> Practice and development</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        Thank you for visiting my portfolio. You can find my
+        coding journey and future projects on GitHub.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/" target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+        <!-- Add your LinkedIn profile link when available. -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ranjanitha | Personal Portfolio</p>
+    <p>Learning, building, and growing every day.</p>
+  </footer>
+
+</body>
+</html>
